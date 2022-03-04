@@ -1,0 +1,41 @@
+/* Reset do CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+}
+
+/* Ajuste dos itens na tela */
+
+.adivinhaContainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 40%;
+    padding: 10px;
+    margin: 300px auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+.refresh {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilizacao dos itens */
+
+.adivinhaContainer {
+    border: 2px solid black;
+    border-radius: 10px;
+}

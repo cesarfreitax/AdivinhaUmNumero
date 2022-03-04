@@ -1,13 +1,19 @@
-const numeroSecreto = Math.round(Math.random()*10);
+const numeroSecreto = Math.round(Math.random() * 10);
+console.log(numeroSecreto);
 
-const input = document.querySelector("input")
+const input = document.querySelector("input");
 input.focus();
 
-function adivinhar(){
-    
+const msgParabens = document.getElementById("msgParabens")
+
+const refresh = document.getElementById("refresh")
+
+function adivinhar() {
     if(input.value == numeroSecreto){
-        alert("Você acertou! Parabéns!!!")
+        msgParabens.innerText="PARABEEEEEEENS! VOCE ACERTOU!"
+        refresh.style.display="flex"
     } else {
-        alert("Não foi dessa vez... Tente novamente!")
+        alert(`Era o ${numeroSecreto}... Tente novamente!`)
+        location.reload();
     }
 }

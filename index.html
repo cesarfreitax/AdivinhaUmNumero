@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Adivinha Um Número!</title>
 </head>
+
 <body>
-    <header></header>
 
     <main>
         <div class="adivinhaContainer">
-        <h1>Adivinhe um numero de 1 a 10...</h1>
-        <input type="text" class="inputNumero">
-        <button onclick="adivinhar()">Adivinhar!</button>
+            <h1>Adivinha um numero de 1 a 10...</h1>
+            <input type="text" placeholder="Digite aqui o numero">
+            <button onclick="adivinhar()">Adivinhar!</button>
+            <p id="msgParabens"></p>
+            <button onclick="location.reload()" class="refresh" id="refresh">Jogue novamente!</button>
         </div>
     </main>
 
-    <footer></footer>
+    <footer><p>Desenvolvido por Cesar Freitas.</p></footer>
 
     <script src=".js/index.js"></script>
 </body>
+
 </html>
