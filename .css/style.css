@@ -1,10 +1,12 @@
 /* Reset do CSS */
 
-* {
+*,
+*::before,
+*::after   {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'El Messiri', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Ajuste dos itens na tela */
@@ -12,17 +14,16 @@
 .adivinhaContainer {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 35%;
     height: 40%;
-    padding: 10px;
+    padding: 20px;
     margin: 300px auto;
     align-items: center;
     text-align: center;
 }
 
-
-.refresh {
-    display: none;
+#msg {
+    margin: 5px;
 }
 
 footer {
@@ -33,9 +34,103 @@ footer {
     text-align: center;
 }
 
+/* Background */
+
+body {
+    /* background: url("../imgs/bg.gif");
+    background-size: cover; */
+    background: black;
+}
+
 /* Estilizacao dos itens */
 
-.adivinhaContainer {
-    border: 2px solid black;
+.adivinhaContainer {    
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 blueviolet;
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.adivinhaContainer h1 {
+    color: white;
+    text-shadow: blueviolet 0.1em 0.1em 0.2em;
+}
+
+.adivinhaContainer p {
+    font-size: 18px;
+}
+
+.adivinhaInput {
+    width: 80px;
+    height: 40px;
+    background: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+    margin: 10px;
+}
+
+.adivinhaButton {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: white;
+    border: 1px solid blueviolet;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: blueviolet 0.1em 0.1em 0.2em;
+    overflow: hidden;
+width: 100px;
+transition: 0.2s;
+}
+
+.adivinhaButton:hover {
+    background: #8a2be2;
+    box-shadow: 0 0 10px #8a2be2, 0 0 15px #5b2be2, 0 0 30px #730bec;
+
+}
+
+.refresh {
+    display: none;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: white;
+    border: 1px solid blueviolet;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: blueviolet 0.1em 0.1em 0.2em;
+}
+
+.refresh {
+overflow: hidden;
+width: 100px;
+transition: 0.2s;
+}
+
+.refresh:hover {
+    background: #8a2be2;
+    box-shadow: 0 0 10px #8a2be2, 0 0 15px #5b2be2, 0 0 30px #730bec;
+
+}
+
+input:focus {
+    /* box-shadow: 0 0 0 0; */
+    outline: 0;
+}
+
+footer {
+    color: white;
 }
