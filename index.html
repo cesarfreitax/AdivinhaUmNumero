@@ -8,23 +8,25 @@
     <link rel="stylesheet" href=".css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Adivinha Um Número!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>ADIVINHA UM NÚMERO</title>
 </head>
 
 <body>
 
     <main>
-        <div class="adivinhaContainer">
-            <h1>Adivinha um numero de 1 a 10...</h1>
-            <input type="text" placeholder="Digite aqui o numero">
-            <button onclick="adivinhar()">Adivinhar!</button>
-            <p id="msgParabens"></p>
-            <button onclick="location.reload()" class="refresh" id="refresh">Jogue novamente!</button>
+        <div class="adivinhaContainer" id="adivinhaContainer">
+            <h1 id="adivinhaTitle">ADIVINHA UM NÚMERO DE 1 A 10!</h1>
+            <input type="text" class="adivinhaInput" placeholder="?">
+            <p id="msg"></p>
+            <a  id="adivinhaButton" class="adivinhaButton" onclick="adivinhar()">ADIVINHAR</a>
+            <p id="msgWinOrLose"></p>
+            <p id="msgWinOrLose"></p>
+            <a onclick="location.reload()" class="refresh" id="refresh">VOLTAR</a>
         </div>
     </main>
 
-    <footer><p>Desenvolvido por Cesar Freitas.</p></footer>
+    <footer><p>Desenvolvido por César Freitas.</p></footer>
 
     <script src=".js/index.js"></script>
 </body>
