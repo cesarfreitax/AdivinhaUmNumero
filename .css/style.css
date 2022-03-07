@@ -87,10 +87,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     text-shadow: blueviolet 0.1em 0.1em 0.2em;
-}
-
-.adivinhaButton {
-overflow: hidden;
+    overflow: hidden;
 width: 100px;
 transition: 0.2s;
 }
